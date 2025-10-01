@@ -24,7 +24,7 @@ interface User {
   username: string;
   password: string;
   studentId?: string | null;
-  role: "STUDENT" | "ADMIN";
+  role: "STUDENT" | "ADMIN"; //ใช้ endpoint ไหนได้บ้าง
   tokens?: string[];
 }
 export type { User };
