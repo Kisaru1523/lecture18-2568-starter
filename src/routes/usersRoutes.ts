@@ -1,4 +1,4 @@
-import e, { Router, type Request, type Response } from "express";
+import { Router, type Request, type Response } from "express";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 dotenv.config();
@@ -7,11 +7,10 @@ import type { User, CustomRequest, UserPayload } from "../libs/types.js";
 
 // import database
 import { users, reset_users } from "../db/db.js";
-import { zStudentId } from "../libs/zodValidators.js";
 
 import { authenticateTokens } from "../middlewares/authenMiddleware.js";
 import { checkRoleAdmin } from "../middlewares/checkRoleAdminMiddleware.js";
-import { da } from "zod/locales";
+//import { da } from "zod/locales";
 // import { success } from "zod";
 // import { ca } from "zod/locales";
 
